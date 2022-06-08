@@ -8,7 +8,7 @@
 
 
 #include "Lve_window.hpp"
-
+#include "Lve_pipeline.hpp"
 namespace lve{
 class FirstApp
 {
@@ -18,6 +18,7 @@ public:
     void run();
 private:
     LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan!"};
+    LvePipeline lvePipeline{"shaders/simple_shader.vert.spv", "shaders/simple_shader.frag.spv"};
 
 };
 } /* first_app_h */
